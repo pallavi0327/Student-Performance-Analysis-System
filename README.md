@@ -1,208 +1,209 @@
-# 学生成绩分析系统 (Student Performance Analysis System)
+Here is the **English version** of your Student Performance Analysis System README:
 
-一个基于Python和Tkinter的综合性学生成绩分析系统，支持数据生成、导入、统计分析、可视化展示和报告生成。
+# Student Performance Analysis System
 
-## 🚀 主要功能
+A comprehensive student performance analysis system built with Python and Tkinter, supporting data generation, import, statistical analysis, visualization, and report generation.
 
-### 📊 数据管理
+## 🚀 Main Features
 
-- **数据导入**：支持Excel (.xlsx, .xls) 和 CSV 格式的成绩数据导入
-- **数据生成**：内置学生数据生成器，可自定义生成测试数据
-- **数据导出**：支持将数据和分析结果导出为多种格式
+### 📊 Data Management
 
-### 📈 统计分析
+- **Data Import**: Supports Excel (.xlsx, .xls) and CSV format score files
+- **Data Generation**: Built-in student data generator with customizable test data
+- **Data Export**: Export data and analysis results in multiple formats
 
-- **基本统计分析**：计算各科目的平均分、最高分、最低分、及格率、优秀率等
-- **科目对比分析**：生成各科目平均分对比图和分数分布箱线图
-- **成绩分布分析**：生成总分分布直方图和各科目分数段占比分析
-- **高级分析**：包含相关性分析、班级对比、密度分析、雷达图和散点图矩阵
+### 📈 Statistical Analysis
 
-### 📋 可视化功能
+- **Basic Statistics**: Average score, highest score, lowest score, pass rate, excellence rate per subject
+- **Subject Comparison**: Subject average score comparison chart + box plots of score distribution
+- **Score Distribution Analysis**: Total score histogram + percentage analysis by score segments per subject
+- **Advanced Analysis**: Correlation analysis, class comparison, density plots, radar charts, scatter plot matrix
 
-- **多样化图表**：柱状图、箱线图、直方图、饼图、热力图、雷达图、散点图等
-- **交互式界面**：基于Tkinter的直观用户界面
-- **实时预览**：分析结果实时显示在可视化面板中
+### 📋 Visualization Features
 
-### 📄 报告生成
+- **Various Chart Types**: Bar, box, histogram, pie, heatmap, radar, scatter, etc.
+- **Interactive Interface**: Intuitive Tkinter-based GUI
+- **Real-time Preview**: Analysis results displayed instantly in the visualization panel
 
-- **PDF报告**：自动生成包含所有图表和统计数据的综合分析报告
-- **中文支持**：完整支持中文字体显示
-- **多格式导出**：支持PNG、JPG、PDF等多种图表导出格式
+### 📄 Report Generation
 
-## 🛠️ 技术栈
+- **PDF Report**: Automatically generates comprehensive report with charts and statistics
+- **Chinese Support**: Full support for Chinese character display
+- **Multi-format Export**: Charts can be exported as PNG, JPG, PDF, etc.
 
-- **Python 3.7+**
-- **GUI框架**：Tkinter
-- **数据处理**：Pandas, NumPy
-- **数据可视化**：Matplotlib, Seaborn
-- **PDF生成**：ReportLab
-- **其他**：Random (数据生成)
+## 🛠️ Tech Stack
 
-## 📦 安装依赖
+- **Python** 3.7+
+- **GUI Framework**: Tkinter
+- **Data Processing**: Pandas, NumPy
+- **Visualization**: Matplotlib, Seaborn
+- **PDF Generation**: ReportLab
+- **Others**: Random (for data generation)
+
+## 📦 Installation
 
 ```bash
 pip install pandas numpy matplotlib seaborn reportlab
 ```
 
-## 🎯 使用方法
+## 🎯 Quick Start
 
-### 1. 启动程序
+### 1. Run the program
 
 ```bash
 python integrated_system.py
 ```
 
-### 2. 数据准备
+### 2. Prepare Data
 
-#### 方式一：导入现有数据
+#### Option A: Import Existing Data
 
-- 点击菜单栏"文件" → "导入数据"
-- 选择Excel或CSV格式的成绩数据文件
-- 数据应包含：学生信息（姓名、学号、班级等）和各科目成绩
+- Menu → File → Import Data
+- Select Excel or CSV score file
+- File should contain: student info (name, ID, class, etc.) + subject scores
 
-#### 方式二：生成测试数据
+#### Option B: Generate Test Data
 
-- 点击菜单栏"工具" → "学生数据生成器"
-- 自定义设置：
-  - 学生数量（1-1000）
-  - 学号前缀
-  - 班级范围
-  - 科目选择和分数范围
-  - 及格分和及格率设置
-- 生成后可直接导出或用于分析
+- Menu → Tools → Student Data Generator
+- Customizable settings:
+  - Number of students (1–1000)
+  - Student ID prefix
+  - Class range
+  - Subjects and score ranges
+  - Pass mark & expected pass rate
+- Generated data can be exported or used directly for analysis
 
-### 3. 数据分析
+### 3. Analyze Data
 
-#### 基本统计分析
+#### Basic Statistics
 
-- 点击"基本统计分析"按钮
-- 查看各科目详细统计信息
-- 自动计算总分、平均分和排名
+- Click "Basic Statistical Analysis"
+- View detailed stats per subject
+- Auto-calculates total score, average, and ranking
 
-#### 科目对比分析
+#### Subject Comparison
 
-- 点击"科目对比分析"按钮
-- 生成科目平均分对比图
-- 查看科目分数分布箱线图
+- Click "Subject Comparison Analysis"
+- View average score comparison bar chart
+- View score distribution box plots per subject
 
-#### 成绩分布分析
+#### Score Distribution
 
-- 点击"成绩分布分析"按钮
-- 查看总分分布直方图
-- 分析各科目分数段占比
+- Click "Score Distribution Analysis"
+- View total score histogram
+- Analyze percentage in each score segment per subject
 
-#### 高级分析
+#### Advanced Analysis
 
-- 点击"高级分析"按钮
-- 科目间相关性热力图
-- 班级成绩对比分析
-- 成绩分布密度图
-- 优秀学生雷达图
-- 科目成绩散点图矩阵
+- Click "Advanced Analysis"
+- Subject correlation heatmap
+- Class-level comparison
+- Score density plots
+- Top students radar chart
+- Subject scores scatter plot matrix
 
-### 4. 结果导出
+### 4. Export Results
 
-#### 导出分析结果
+#### Export Analysis Results
 
-- 点击"导出分析结果"按钮
-- 选择导出内容（统计数据/图表）
-- 选择导出格式（Excel/CSV/PNG/JPG/PDF）
+- Click "Export Analysis Results"
+- Choose content (statistics / charts)
+- Select format (Excel / CSV / PNG / JPG / PDF)
 
-#### 生成PDF报告
+#### Generate PDF Report
 
-- 点击"生成PDF报告"按钮
-- 自动生成包含所有分析内容的综合报告
-- 支持中文显示，包含图表和统计数据
+- Click "Generate PDF Report"
+- Automatically creates full report with charts, stats, and conclusions
+- Supports Chinese characters and includes timestamp
 
-## 📁 项目结构
+## 📁 Project Structure
 
 ```text
 Student-Performance-Analysis-System/
-├── integrated_system.py          # 主程序文件
-├── SimSun.ttf                    # 中文字体文件
-├── README.md                     # 项目说明文档
-├── LICENSE                       # 许可证文件
-└── 示例文件/
-    ├── 学生成绩数据_*.xlsx        # 生成的示例数据
-    ├── 成绩分析结果_*.png         # 导出的图表
-    └── 学生成绩分析报告.pdf       # 生成的PDF报告
+├── integrated_system.py          # Main program
+├── SimSun.ttf                    # Chinese font file (for PDF & display)
+├── README.md                     # This file
+├── LICENSE                       # License file
+└── sample_files/
+    ├── student_scores_*.xlsx     # Generated sample data
+    ├── analysis_charts_*.png     # Exported charts
+    └── student_performance_report.pdf   # Generated PDF report
 ```
 
-## 🎨 主要特性
+## 🎨 Key Highlights
 
-### 数据生成器特性
+### Data Generator Features
 
-- **智能姓名生成**：使用真实中文姓氏和名字库
-- **灵活班级设置**：支持随机分配或指定班级
-- **可控成绩分布**：可设置及格率和分数范围
-- **多科目支持**：13个预设科目，支持自定义
+- Realistic Chinese name generation (common surnames + given names)
+- Flexible class assignment
+- Controlled score distribution (pass rate, score range)
+- Supports up to 13 preset subjects (customizable)
 
-### 分析功能特性
+### Analysis Features
 
-- **多维度统计**：平均分、中位数、标准差、分位数等
-- **智能分级**：自动识别不同满分制的科目
-- **实时计算**：自动计算总分、排名和平均分
-- **容错处理**：智能处理缺失数据和异常值
+- Multi-dimensional stats: mean, median, std, quartiles, etc.
+- Smart full-mark detection for different subjects
+- Automatic total score, ranking, and average calculation
+- Robust handling of missing values & outliers
 
-### 可视化特性
+### Visualization Features
 
-- **响应式设计**：支持滚动查看和缩放
-- **美观配色**：使用专业的颜色方案
-- **交互体验**：鼠标滚轮支持，标签角度自适应
-- **高清导出**：300 DPI高清图表导出
+- Responsive scrollable view
+- Professional color schemes
+- Good label rotation & readability
+- High-resolution export (300 DPI)
 
-### 报告生成特性
+### Report Generation Features
 
-- **中文字体优化**：优先使用本地SimSun.ttf字体
-- **智能布局**：自动分页和排版
-- **全面内容**：包含统计数据、图表和分析结论
-- **时间戳**：自动添加生成时间
+- Chinese font optimization (uses SimSun.ttf when available)
+- Smart layout with auto-pagination
+- Includes stats tables, charts, and brief conclusions
+- Generation timestamp included
 
-## 🔧 配置说明
+## 🔧 Configuration Notes
 
-### 中文字体配置
+### Chinese Font Support
 
-1. 确保项目目录下有 `SimSun.ttf` 字体文件
-2. 系统会自动检测并使用本地字体
-3. 支持Windows系统字体自动检测
+1. Place `SimSun.ttf` in the project folder
+2. The program auto-detects and prefers local font
+3. Also supports system fonts on Windows
 
-### 数据格式要求
+### Data Format Requirements
 
-- **必需列**：姓名
-- **可选列**：学号、班级、序号
-- **科目列**：任意科目名称
-- **编码**：支持UTF-8编码的中文
+- **Required column**: Name (姓名)
+- **Optional columns**: Student ID, Class, Index
+- **Subject columns**: Any subject names
+- **Encoding**: UTF-8 recommended for Chinese characters
 
-## 🐛 常见问题
+## 🐛 FAQ
 
-### Q: 中文显示乱码怎么办？
+**Q: Chinese characters appear as boxes/gibberish?**  
+A: Make sure `SimSun.ttf` is in the project directory.
 
-A: 确保项目目录下有SimSun.ttf字体文件，程序会自动使用本地字体。
+**Q: Import data failed?**  
+A: Check that the file has a "Name" column and uses UTF-8 encoding.
 
-### Q: 导入数据失败怎么办？
+**Q: Charts are cut off / not fully visible?**  
+A: Use mouse wheel to scroll or resize the window.
 
-A: 检查数据格式是否正确，确保包含"姓名"列，并且文件编码为UTF-8。
+**Q: PDF report generation failed?**  
+A: Ensure `reportlab` is installed and you have write permission / enough disk space.
 
-### Q: 图表显示不完整怎么办？
+## 📄 License
 
-A: 使用鼠标滚轮滚动查看，或调整窗口大小。
+MIT License — see the [LICENSE](LICENSE) file for details.
 
-### Q: PDF报告生成失败怎么办？
+## 👥 Contributing
 
-A: 确保已安装reportlab库，并且有足够的磁盘空间。
+Feel free to open Issues or submit Pull Requests!
 
-## 📄 许可证
+## 📧 Contact
 
-本项目采用 MIT 许可证 - 详见 [LICENSE](LICENSE) 文件
-
-## 👥 贡献
-
-欢迎提交Issue和Pull Request来改进这个项目！
-
-## 📧 联系方式
-
-如有问题或建议，请创建Issue或联系项目维护者。
+Questions, suggestions, or bugs? Please open an Issue.
 
 ---
 
-**学生成绩分析系统 v2.0** - 让数据分析更简单，让教育决策更科学！
+**Student Performance Analysis System v2.0**  
+Making data analysis easier — helping education decisions become smarter!
+
+Good luck with your project!
