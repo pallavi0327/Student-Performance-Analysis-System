@@ -1,5 +1,3 @@
-Here is the **English version** of your Student Performance Analysis System README:
-
 # Student Performance Analysis System
 
 A comprehensive student performance analysis system built with Python and Tkinter, supporting data generation, import, statistical analysis, visualization, and report generation.
@@ -121,7 +119,6 @@ python integrated_system.py
 ```text
 Student-Performance-Analysis-System/
 ├── integrated_system.py          # Main program
-├── SimSun.ttf                    # Chinese font file (for PDF & display)
 ├── README.md                     # This file
 ├── LICENSE                       # License file
 └── sample_files/
@@ -162,11 +159,7 @@ Student-Performance-Analysis-System/
 
 ## 🔧 Configuration Notes
 
-### Chinese Font Support
 
-1. Place `SimSun.ttf` in the project folder
-2. The program auto-detects and prefers local font
-3. Also supports system fonts on Windows
 
 ### Data Format Requirements
 
@@ -175,35 +168,3 @@ Student-Performance-Analysis-System/
 - **Subject columns**: Any subject names
 - **Encoding**: UTF-8 recommended for Chinese characters
 
-## 🐛 FAQ
-
-**Q: Chinese characters appear as boxes/gibberish?**  
-A: Make sure `SimSun.ttf` is in the project directory.
-
-**Q: Import data failed?**  
-A: Check that the file has a "Name" column and uses UTF-8 encoding.
-
-**Q: Charts are cut off / not fully visible?**  
-A: Use mouse wheel to scroll or resize the window.
-
-**Q: PDF report generation failed?**  
-A: Ensure `reportlab` is installed and you have write permission / enough disk space.
-
-## 📄 License
-
-MIT License — see the [LICENSE](LICENSE) file for details.
-
-## 👥 Contributing
-
-Feel free to open Issues or submit Pull Requests!
-
-## 📧 Contact
-
-Questions, suggestions, or bugs? Please open an Issue.
-
----
-
-**Student Performance Analysis System v2.0**  
-Making data analysis easier — helping education decisions become smarter!
-
-Good luck with your project!
